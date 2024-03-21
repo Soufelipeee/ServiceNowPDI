@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget">
+    <m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE">
+        <sp_angular_provider display_value="spEllipsisTooltip">1d2b40e07323201081d3738234f6a714</sp_angular_provider>
+        <sp_widget display_value="Felipe1">c501d1ad930102102c711aebb9373c39</sp_widget>
+        <sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-19 19:15:20</sys_created_on>
+        <sys_id>950199ed930102102c711aebb9373c33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>spEllipsisTooltip.Felipe1</sys_name>
+        <sys_package display_value="Felipe" source="cdd225e7937046102c711aebb9373c1b">cdd225e7937046102c711aebb9373c1b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Felipe">cdd225e7937046102c711aebb9373c1b</sys_scope>
+        <sys_update_name>m2m_sp_ng_pro_sp_widget_950199ed930102102c711aebb9373c33</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-19 19:15:20</sys_updated_on>
+    </m2m_sp_ng_pro_sp_widget>
+</record_update>
