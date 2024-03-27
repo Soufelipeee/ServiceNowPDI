@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope) {
+	/* widget controller */
+	var c = this;
+
+	c.data.formChecked = false;
+
+	c.checkFormState = function(someMsgInput){
+
+		c.data.formChecked = true;
+
+		console.log('c form', c.my_form);
+		console.log('$scope form', $scope.my_form);
+		console.log('$scope form.$pristine', $scope.my_form.$pristine);
+		console.log('$scope form.dirty', $scope.my_form.$dirty);
+		console.log('$scope form someMsg.$valid', $scope.my_form.someMsg.$valid);
+		console.log('$scope form someMsg.$invalid', $scope.my_form.someMsg.$invalid);
+	}
+
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.dropdown .dropdown-menu{
+  display:none
+}
+.dropdown:hover &gt; .dropdown-menu, .dropdownend:hover &gt; .dropdown-menu, .dropdownII:hover &gt; .dropdown-menu, .dropdownendII:hover &gt; .dropdown-menu{
+  display: block;
+  margin-top: .125em;
+}
+.dropdownend:hover &gt; .dropdown-menu, .dropdownendII:hover &gt; .dropdown-menu{
+  left: 100%;
+  position: absolute;
+  top:70%;
+}
+
+.containerheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; 
+
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>fv-callfunction</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>FV-CallFunction</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-21 18:34:28</sys_created_on>
+        <sys_id>c2da1b4e9301c2102c711aebb9373c54</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>FV-CallFunction</sys_name>
+        <sys_package display_value="Felipe" source="cdd225e7937046102c711aebb9373c1b">cdd225e7937046102c711aebb9373c1b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Felipe">cdd225e7937046102c711aebb9373c1b</sys_scope>
+        <sys_update_name>sp_widget_c2da1b4e9301c2102c711aebb9373c54</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-21 19:49:28</sys_updated_on>
+        <template><![CDATA[<form name="my_form">
+
+  <input id="someMsg" name="someMsg" type="number"	ng-model="c.someMsg"/> 
+
+  <button ng-click="c.checkFormState(c.someMsg)"> Save new Value </button>
+
+  <div ng-if="c.formChecked"> See outputs </div>
+
+
+
+    <p> Form State </p>
+
+    <ul>
+      <li>$valid: {{my_form.$valid}} </li>
+      <li>$invalid:{{my_form.$invalid}} </li>
+      <li>$pristine:{{my_form.$pristine}}</li>
+      <li>$dirty:{{my_form.$dirty}} </li>
+    </ul>
+    
+    <p>Form Input State: {{my_form.someMsg.$touched}}</p>
+
+
+
+
+
+</form>
+
+
+]]></template>
+    </sp_widget>
+</record_update>
