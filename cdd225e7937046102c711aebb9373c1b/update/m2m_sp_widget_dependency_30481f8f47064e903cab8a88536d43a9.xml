@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency">
+    <m2m_sp_widget_dependency action="INSERT_OR_UPDATE">
+        <sp_dependency display_value="sn3m.paginate">1165d7cb47064e903cab8a88536d4344</sp_dependency>
+        <sp_widget display_value="Copy of FV-SimpleListWithPagination I">b0481f8f47064e903cab8a88536d43a6</sp_widget>
+        <sys_class_name>m2m_sp_widget_dependency</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-13 13:59:53</sys_created_on>
+        <sys_id>30481f8f47064e903cab8a88536d43a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn3m.paginate.Copy of FV-SimpleListWithPagination</sys_name>
+        <sys_package display_value="Felipe" source="cdd225e7937046102c711aebb9373c1b">cdd225e7937046102c711aebb9373c1b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Felipe">cdd225e7937046102c711aebb9373c1b</sys_scope>
+        <sys_update_name>m2m_sp_widget_dependency_30481f8f47064e903cab8a88536d43a9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-13 13:59:53</sys_updated_on>
+    </m2m_sp_widget_dependency>
+</record_update>

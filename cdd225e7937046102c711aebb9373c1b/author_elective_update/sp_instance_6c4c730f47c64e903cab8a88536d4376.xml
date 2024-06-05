@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">93f15d21934102102c711aebb9373ce7</sp_column>
+        <sp_widget display_value="SC Catalog Item">3c29786e87133200e0ef0cf888cb0bdf</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-13 16:37:10</sys_created_on>
+        <sys_id>6c4c730f47c64e903cab8a88536d4376</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Felipe" source="cdd225e7937046102c711aebb9373c1b">cdd225e7937046102c711aebb9373c1b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Felipe">cdd225e7937046102c711aebb9373c1b</sys_scope>
+        <sys_update_name>sp_instance_6c4c730f47c64e903cab8a88536d4376</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-13 16:37:14</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=6c4c730f47c64e903cab8a88536d4376"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Felipe">cdd225e7937046102c711aebb9373c1b</application>
+        <file_path/>
+        <instance_id>7ec1c8e3db6b13c8439ef70fbf961964</instance_id>
+        <instance_name>dev68386</instance_name>
+        <name>sp_instance_6c4c730f47c64e903cab8a88536d4376</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">93f15d21934102102c711aebb9373ce7</sp_column><sp_widget display_value="SC Catalog Item">3c29786e87133200e0ef0cf888cb0bdf</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-13 16:37:10</sys_created_on><sys_id>6c4c730f47c64e903cab8a88536d4376</sys_id><sys_mod_count>1</sys_mod_count><sys_name/><sys_package display_value="Felipe" source="cdd225e7937046102c711aebb9373c1b">cdd225e7937046102c711aebb9373c1b</sys_package><sys_policy/><sys_scope display_value="Felipe">cdd225e7937046102c711aebb9373c1b</sys_scope><sys_update_name>sp_instance_6c4c730f47c64e903cab8a88536d4376</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-13 16:37:14</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=6c4c730f47c64e903cab8a88536d4376"/></record_update>]]></payload>
+        <payload_hash>-96873807</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>ffa97f52476182103cab8a88536d43af</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-13 16:37:14</sys_created_on>
+        <sys_id>394c370f47c64e903cab8a88536d43c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f72d0c1d20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-13 16:37:14</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>bd4c370f39c64e908b16666db27780c1</update_guid>
+        <update_guid_history>bd4c370f39c64e908b16666db27780c1:-96873807,604c730f6ac64e90dd7a98a67c118979:-502161584</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">938b66ff470e02d03cab8a88536d4377</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-15 18:40:00</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>1b224cb6fcbe4db283d227bedbe7a6c4</sys_id>
+        <sys_metadata>6c4c730f47c64e903cab8a88536d4376</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Felipe" source="cdd225e7937046102c711aebb9373c1b">cdd225e7937046102c711aebb9373c1b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Felipe">cdd225e7937046102c711aebb9373c1b</sys_scope>
+        <sys_scope_delete display_value="">1f453cf7d6c94e62a920a4a9c5304a31</sys_scope_delete>
+        <sys_update_name>sp_instance_6c4c730f47c64e903cab8a88536d4376</sys_update_name>
+        <sys_update_version display_value="sp_instance_6c4c730f47c64e903cab8a88536d4376">394c370f47c64e903cab8a88536d43c2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-15 18:40:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

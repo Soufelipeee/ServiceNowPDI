@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope) {
+	/* widget controller */
+
+	var c = this;
+
+
+	//---------------------JSCHART---------------------------------------------------------------------------------------------------------------------------
+	var ctx = document.getElementById('myChart');
+
+	var totalVolume = 25978270006.99;
+	var parcialVolume = 25000000001.20;
+	var verifiableVolume = 25978270006.00;
+	var notVerified = 978270005.00;
+	var VerifiedPercent = 90;
+	var teste = 978270005;
+
+
+
+	new Chart(ctx, {
+		type: 'bar',
+		data: {
+			labels: ['Volume Total', 'Parcial', 'Verifiable ', 'Not Verified', 'Verified Percent', 'teste'],
+			datasets: [{
+				label: 'Consolidate',
+				data: [totalVolume, parcialVolume, verifiableVolume, notVerified, VerifiedPercent, teste],
+				borderWidth: 1,				
+				backgroundColor: [
+					'rgba(255, 99, 132, 0.6)',
+					'rgba(255, 159, 64, 0.2)',
+					'rgba(255, 205, 86, 0.2)',
+					'rgba(75, 192, 192, 0.2)',
+					'rgba(54, 162, 235, 0.2)',
+					'rgba(153, 102, 255, 0.2)',
+					'rgba(201, 203, 207, 0.2)'
+				],
+				borderColor: [
+					'rgb(255, 99, 132)',
+					'rgb(255, 159, 64)',
+					'rgb(255, 205, 86)',
+					'rgb(75, 192, 192)',
+					'rgb(54, 162, 235)',
+					'rgb(153, 102, 255)',
+					'rgb(201, 203, 207)'
+				],
+
+			},
+								 {
+									 type: 'bar',
+									 label: 'Line Consolidate',
+									 data: [totalVolume , parcialVolume, verifiableVolume, notVerified, VerifiedPercent, (teste * 2)],
+								 }
+								]
+		},
+		options: {
+			indexAxis: 'y',
+			scales: {
+				y: {
+					beginAtZero: false,
+				}
+			}
+		}
+	});
+
+	//---------------------GOOGLECHART---------------------------------------------------------------------------------------------------------------------------
+	google.charts.load("current", {packages:["corechart"]});
+	google.charts.setOnLoadCallback(drawChart);
+	function drawChart() {
+		var data = google.visualization.arrayToDataTable([
+			["Element", "Density", { role: "style" } ],
+			["Copper", 8.94, "#b87333"],
+			["Silver", 10.49, "silver"],
+			["Gold", 19.30, "gold"],
+			["Platinum", 21.45, "color: #e5e4e2"]
+		]);
+
+		var view = new google.visualization.DataView(data);
+		view.setColumns([0, 1,
+										 { calc: "stringify",
+											sourceColumn: 1,
+											type: "string",
+											role: "annotation" },
+										 2]);
+
+		var options = {
+			title: "GoogleChart",
+			width: 600,
+			height: 400,
+			bar: {groupWidth: "95%"},
+			legend: { position: "none" },
+		};
+		var chart = new google.visualization.BarChart(document.getElementById("barchart_values"));
+		chart.draw(view, options);
+	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css> .horizontal-collapse {
+    height: 70px;
+  
+  }
+  .navbar-collapse.in {
+    overflow-y: hidden;
+  }</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>fv-chartcustom</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>FV-ChartCustom</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-04 12:01:53</sys_created_on>
+        <sys_id>2230101a472242103cab8a88536d430d</sys_id>
+        <sys_mod_count>122</sys_mod_count>
+        <sys_name>FV-ChartCustom</sys_name>
+        <sys_package display_value="Felipe" source="cdd225e7937046102c711aebb9373c1b">cdd225e7937046102c711aebb9373c1b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Felipe">cdd225e7937046102c711aebb9373c1b</sys_scope>
+        <sys_update_name>sp_widget_2230101a472242103cab8a88536d430d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-04 19:45:27</sys_updated_on>
+        <template><![CDATA[<div>
+  <b>ChartJS</b>
+  <canvas id="myChart"></canvas>
+</div>
+
+<div>
+<div id="barchart_values" style="width: 900px; height: 300px;"></div>
+</div>
+
+]]></template>
+    </sp_widget>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency">
+    <m2m_sp_widget_dependency action="INSERT_OR_UPDATE">
+        <sp_dependency display_value="ChartCustom">00f0905a472242103cab8a88536d432c</sp_dependency>
+        <sp_widget display_value="FV-ChartCustom">2230101a472242103cab8a88536d430d</sp_widget>
+        <sys_class_name>m2m_sp_widget_dependency</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-04 12:05:05</sys_created_on>
+        <sys_id>a5f0905a472242103cab8a88536d4334</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ChartCustom.FV-ChartCustom</sys_name>
+        <sys_package display_value="Felipe" source="cdd225e7937046102c711aebb9373c1b">cdd225e7937046102c711aebb9373c1b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Felipe">cdd225e7937046102c711aebb9373c1b</sys_scope>
+        <sys_update_name>m2m_sp_widget_dependency_a5f0905a472242103cab8a88536d4334</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-04 12:05:05</sys_updated_on>
+    </m2m_sp_widget_dependency>
+</record_update>

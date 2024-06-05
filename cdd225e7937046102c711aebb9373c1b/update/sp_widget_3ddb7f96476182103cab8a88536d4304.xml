@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>fv-inputoptions</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>FV-InputOptions</name>
+        <option_schema>[{"name":"title","section":"other","label":"Title","type":"string"},{"name":"choice","section":"other","label":"Choice","type":"choice","choices":[{"label":"ChoiceA ","value":"ChoiceA "},{"label":"ChoiceB","value":"ChoiceB"}]}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	
+	if(!input){
+			gs.addInfoMessage("Testando Input:: " + options.title)
+	}
+	
+	if(input){
+		
+	}
+
+
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-16 12:08:30</sys_created_on>
+        <sys_id>3ddb7f96476182103cab8a88536d4304</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>FV-InputOptions</sys_name>
+        <sys_package display_value="Felipe" source="cdd225e7937046102c711aebb9373c1b">cdd225e7937046102c711aebb9373c1b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Felipe">cdd225e7937046102c711aebb9373c1b</sys_scope>
+        <sys_update_name>sp_widget_3ddb7f96476182103cab8a88536d4304</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-18 17:01:37</sys_updated_on>
+        <template><![CDATA[<div>
+<h1> {{ c.options.title }}  </h1>
+  <h1> {{ c.options.choice }}  </h1>
+  <h1> ${ teste } "
+    
+  </h1>
+</div>]]></template>
+    </sp_widget>
+</record_update>

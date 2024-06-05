@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function ($scope, spUtil, $filter, $location) {
+	 
+	
+	/* é possível descobrir quais dependencias podem ser utilizadas 
+	no angular buscando informação no site angular no <SERVUCE< */
+	/* widget controller */
+	
+	
+	
+	var c = this;
+	$scope.somesSysId = '68ea37be47b10a503cab8a88536d43e2';
+	$scope.toUpperTitle = "Retornando UpperCase";
+	$scope.onLoad = "Testando $filter(uppercase) no onload";
+	$scope.locationURL = $location.search(); 
+	
+	
+	
+
+	$scope.onLoad = $filter("uppercase")($scope.onLoad)
+
+	$scope.exibirMensagem = function () { 
+		
+		spUtil.addInfoMessage("teste");
+		
+	}
+
+	$scope.transformarEmMaiusculo = function () {
+		
+		$scope.toUpperTitle = $filter("uppercase")($scope.toUpperTitle)
+		
+	}
+
+};
+
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>widgettesteportal</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>widgetTestePortal</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-30 11:36:59</sys_created_on>
+        <sys_id>68ea37be47b10a503cab8a88536d43e2</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_name>widgetTestePortal</sys_name>
+        <sys_package display_value="Controle -  Pinçamento de Operações da Tesouraria" source="x_bdb_5pa_00000221">3a36839d1b07b4109a452fc13b4bcb5e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Felipe">cdd225e7937046102c711aebb9373c1b</sys_scope>
+        <sys_update_name>sp_widget_68ea37be47b10a503cab8a88536d43e2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-02 18:03:41</sys_updated_on>
+        <template><![CDATA[<div>
+  <b> Direcionar para uma página URL Dinamica: </b>
+  <a href="?id=widget_editor&sys_id={{somesSysId}}">Click Aqui</a>
+</div>
+
+<div>
+  <b> Chamar Função Exibir Mensagem:  </b>
+  <button ng-click=exibirMensagem()>
+    ClickAqui
+  </button>
+</div>
+
+<div>
+  <b> Chamar Função Exibir $filter </b>
+  <button ng-click=transformarEmMaiusculo()>
+    ClickAqui
+  </button>
+  <b> {{toUpperTitle}} </b>
+</div>
+
+<div>
+  <b> {{onLoad}} </b>
+</div>div>
+
+<div>
+  <b> Testando $location.search deve retornar os parms da URL::  {{locationURL}} </b>
+</div>div>]]></template>
+    </sp_widget>
+</record_update>

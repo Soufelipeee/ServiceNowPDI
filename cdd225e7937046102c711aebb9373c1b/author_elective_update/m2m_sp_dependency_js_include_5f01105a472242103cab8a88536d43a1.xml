@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include">
+    <m2m_sp_dependency_js_include action="DELETE">
+        <order>100</order>
+        <sp_dependency display_value="ChartCustom">00f0905a472242103cab8a88536d432c</sp_dependency>
+        <sp_js_include display_value="https://cdn.jsdelivr.net/npm/chart.js">fff0145a472242103cab8a88536d4322</sp_js_include>
+        <sys_class_name>m2m_sp_dependency_js_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-04 12:05:29</sys_created_on>
+        <sys_id>5f01105a472242103cab8a88536d43a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ChartCustom.https://cdn.jsdelivr.net/npm/chart.js</sys_name>
+        <sys_package display_value="Felipe" source="cdd225e7937046102c711aebb9373c1b">cdd225e7937046102c711aebb9373c1b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Felipe">cdd225e7937046102c711aebb9373c1b</sys_scope>
+        <sys_update_name>m2m_sp_dependency_js_include_5f01105a472242103cab8a88536d43a1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-04 12:05:29</sys_updated_on>
+    </m2m_sp_dependency_js_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Felipe">cdd225e7937046102c711aebb9373c1b</application>
+        <file_path/>
+        <instance_id>7ec1c8e3db6b13c8439ef70fbf961964</instance_id>
+        <instance_name>dev68386</instance_name>
+        <name>m2m_sp_dependency_js_include_5f01105a472242103cab8a88536d43a1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="ChartCustom">00f0905a472242103cab8a88536d432c</sp_dependency><sp_js_include display_value="https://cdn.jsdelivr.net/npm/chart.js">fff0145a472242103cab8a88536d4322</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-04 12:05:29</sys_created_on><sys_id>5f01105a472242103cab8a88536d43a1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ChartCustom.https://cdn.jsdelivr.net/npm/chart.js</sys_name><sys_package display_value="Felipe" source="cdd225e7937046102c711aebb9373c1b">cdd225e7937046102c711aebb9373c1b</sys_package><sys_policy/><sys_scope display_value="Felipe">cdd225e7937046102c711aebb9373c1b</sys_scope><sys_update_name>m2m_sp_dependency_js_include_5f01105a472242103cab8a88536d43a1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-04 12:05:29</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+        <payload_hash>-848365201</payload_hash>
+        <record_name>ChartCustom.https://cdn.jsdelivr.net/npm/chart.js</record_name>
+        <reverted_from/>
+        <source>ffa97f52476182103cab8a88536d43af</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-04 12:05:29</sys_created_on>
+        <sys_id>9b01105a472242103cab8a88536d43a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18fe323dd150000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-04 12:05:29</sys_updated_on>
+        <type>Dependency JS Includes</type>
+        <update_guid>9f01105ab72242108aea7de7f4e47ca3</update_guid>
+        <update_guid_history>9f01105ab72242108aea7de7f4e47ca3:-848365201</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="ChartCustom.https://cdn.jsdelivr.net/npm/chart.js">86d6305a47e242103cab8a88536d436f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-04 14:50:36</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sp_dependency_js_include">m2m_sp_dependency_js_include</sys_db_object>
+        <sys_id>14bbbc03886e44149568b0ef44d02ff1</sys_id>
+        <sys_metadata>5f01105a472242103cab8a88536d43a1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ChartCustom.https://cdn.jsdelivr.net/npm/chart.js</sys_name>
+        <sys_package display_value="Felipe" source="cdd225e7937046102c711aebb9373c1b">cdd225e7937046102c711aebb9373c1b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Felipe">cdd225e7937046102c711aebb9373c1b</sys_scope>
+        <sys_scope_delete display_value="">1f453cf7d6c94e62a920a4a9c5304a31</sys_scope_delete>
+        <sys_update_name>m2m_sp_dependency_js_include_5f01105a472242103cab8a88536d43a1</sys_update_name>
+        <sys_update_version display_value="m2m_sp_dependency_js_include_5f01105a472242103cab8a88536d43a1">9b01105a472242103cab8a88536d43a4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-04 14:50:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

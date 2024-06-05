@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include">
+    <sp_js_include action="INSERT_OR_UPDATE">
+        <display_name>https://cdn.jsdelivr.net/npm/chart.js</display_name>
+        <source>url</source>
+        <sys_class_name>sp_js_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-04 19:36:01</sys_created_on>
+        <sys_id>8018319a472a42103cab8a88536d43c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>https://cdn.jsdelivr.net/npm/chart.js</sys_name>
+        <sys_package display_value="Felipe" source="cdd225e7937046102c711aebb9373c1b">cdd225e7937046102c711aebb9373c1b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Felipe">cdd225e7937046102c711aebb9373c1b</sys_scope>
+        <sys_ui_script/>
+        <sys_update_name>sp_js_include_8018319a472a42103cab8a88536d43c4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-04 19:36:01</sys_updated_on>
+        <url>https://cdn.jsdelivr.net/npm/chart.js</url>
+    </sp_js_include>
+</record_update>

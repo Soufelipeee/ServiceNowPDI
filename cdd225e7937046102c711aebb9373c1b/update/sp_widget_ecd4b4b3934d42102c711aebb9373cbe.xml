@@ -4,7 +4,6 @@
         <client_script><![CDATA[api.controller=function(spUtil, $location) {
 	/* widget controller */
 	var c = this;
-	c.data.greetings = ""
 	c.saveInformation = function(){
 		spUtil.addInfoMessage("1 - Chamada da Função");
 
@@ -36,7 +35,8 @@
 	
 	
 	
-	
+    data.language = gs.getSession().getLanguage() 
+		gs.addInfoMessage(data.language);
 	
 	
 	
@@ -54,18 +54,18 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-26 16:58:27</sys_created_on>
         <sys_id>ecd4b4b3934d42102c711aebb9373cbe</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>FV-CallServer</sys_name>
         <sys_package display_value="Felipe" source="cdd225e7937046102c711aebb9373c1b">cdd225e7937046102c711aebb9373c1b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Felipe">cdd225e7937046102c711aebb9373c1b</sys_scope>
         <sys_update_name>sp_widget_ecd4b4b3934d42102c711aebb9373cbe</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-26 17:20:34</sys_updated_on>
+        <sys_updated_on>2024-04-18 16:44:45</sys_updated_on>
         <template><![CDATA[
 <form name="my_form">
   <input id="greetings" name="greetings" type="text" ng-model="c.data.greetings"> 
-  <button ng-click="c.saveInformation()">CallServer </button>
+  <button ng-click="c.saveInformation()"> "{{ teste }} "   </button>
 </form>
 <p>$pristine: {{my_form.$pristine}} </p>
 

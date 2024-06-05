@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[function continueOK() {
+
+
+
+	// gel é um metodo para abreviar o getelmentbyid
+	// gel is just a shortcut for " document.getElementById "
+	var work_notes = gel('work_notes').value;
+	
+	// trim que remove espaço em braco do começo e do final do texto "   AAA   " return "AAA"
+	work_notes = trim(work_notes);
+
+	if (work_notes == "") {
+		alert("Forneça mais informações");
+		return false;
+	}
+
+	g_form.setValue("u_work_notes", work_notes);
+	GlideDialogWindow.get().destroy();
+
+}
+
+function continueCancel() {
+
+	GlideDialogWindow.get().destroy();
+
+}
+]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint/>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<div>
+    <div>
+        <tr>
+            <td style="width:100%">
+                <textarea name="work_notes" id="work_notes" cols="22" rows="40"></textarea>
+            </td>
+        </tr>
+    </div>
+
+    <div>
+        <g:dialog_buttons_ok_cancel
+         ok_id="submitData"  
+		 ok_type="button" 
+		 ok_text="CONTINUAR" 
+		 ok_style_class="btn btn-primary" 
+		 ok="return continueOK()"
+
+         cancel_id="cancelData" 
+		 cancel_type="button" 
+		 cancel_text="CANCELAR" 
+		 cancel_style_class="btn btn"
+		 cancel="return continueCancel()"/>
+    </div>
+</div>
+</j:jelly>]]></html>
+        <name>problem_work_note_teste</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-15 15:54:20</sys_created_on>
+        <sys_id>89a44273478a02d03cab8a88536d431f</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name>problem_work_note_teste</sys_name>
+        <sys_package display_value="Felipe" source="cdd225e7937046102c711aebb9373c1b">cdd225e7937046102c711aebb9373c1b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Felipe">cdd225e7937046102c711aebb9373c1b</sys_scope>
+        <sys_update_name>sys_ui_page_89a44273478a02d03cab8a88536d431f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-15 19:01:47</sys_updated_on>
+    </sys_ui_page>
+</record_update>
